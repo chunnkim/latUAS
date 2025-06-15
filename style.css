@@ -1,0 +1,203 @@
+Add commentMore actions{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+/* Navbar Section */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #a50000;
+  padding: 15px;
+  border-radius: 16px;
+  transition: all .3s ease-in-out;
+}
+
+/* Logo Section */
+.logo {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d60000;
+}
+
+.logo:hover {
+    color: #a50000;
+}
+
+/* Home Section */
+#home {
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Edit Jam */
+#jam-digital {
+  color: white;
+  background: rgba(0,0,0,0.3);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+#greeting {
+  color: black;
+  margin-top: 10px;
+}
+
+.jam-blok {
+  color: #fff;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Section Product */
+.section {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.produk-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.produk-card {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.produk-card:hover {
+  transform: scale(1.05);
+}
+
+.produk-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+/* tampilan harga */
+.harga {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d60000;
+  margin: 10px 0;
+}
+/* button beli */
+.btn-beli {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d60000;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+}
+
+.btn-beli:hover {
+  background-color: #a50000;
+  transition: all .3s ease-in-out;
+}
+
+/* Section Hubungi Kami */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+#form-error {
+  font-size: 14px;
+  color: red;
+  margin-top: 5px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px;
+  background: #d60000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a50000;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f2f2f2;
+  color: #555;
+}

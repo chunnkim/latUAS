@@ -1,0 +1,99 @@
+<!DOCTYPE html>Add commentMore actions
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNIQLO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header id="navbar">
+    <a href="#home" class="logo">UNIQLO</a>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <h1>Selamat Datang di UNIQLO</h1>
+    <p>Gaya minimalis Jepang yang modern dan fungsional.</p>
+    <!-- Tambahan: jam + greeting -->
+    <div id="jam-digital" style="margin-top:20px; font-size: 24px; font-weight: bold;"></div>
+    <div id="greeting" style="margin-top:10px; font-size: 20px;"></div>
+    <div id="tanggal-hari" class="jam-blok"></div>
+  </section>
+
+  <section id="produk" class="section">
+    <h2>Produk Unggulan</h2>
+    <div class="produk-container">
+      <div class="produk-card">
+        <img src="assets/Kaos.jpg" alt="Kaos" />
+        <h3>Kaos Premium</h3>
+        <p class="harga">Rp 249.000</p>
+        <p>Nyaman dan stylish, cocok untuk keseharian.</p>
+        <button class="btn-beli" onclick="beliProduk('Kaos Premium')">Beli Sekarang</button>
+      </div>
+      <div class="produk-card">
+        <img src="assets/jacket.jpg" alt="Jaket" />
+        <h3>Jaket Ultra Light</h3>
+        <p class="harga">Rp 999.999</p>
+        <p>Ringan tapi hangat, untuk segala musim.</p>
+        <button class="btn-beli" onclick="beliProduk('Kaos Premium')">Beli Sekarang</button>
+      </div>
+      <div class="produk-card">
+        <img src="assets/Fannel.jpg" alt="Fannel" />
+        <h3>Kemeja Fannel</h3>
+        <p class="harga">Rp 699.999</p>
+        <p>Stylish, cocok buat hangout bareng teman.</p>
+        <button class="btn-beli" onclick="beliProduk('Kaos Premium')">Beli Sekarang</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="section">
+    <h2>Tentang Kami</h2>
+    <p><strong>UNIQLO</strong> adalah brand global dari Jepang yang fokus pada pakaian fungsional dengan desain simpel dan berkualitas
+      tinggi. Di Indonesia, Uniqlo pertama kali dibuka pada tanggal 22 Juni 2013 dengan toko pertamanya di Lotte Mall
+      (dahulu Lotte Shopping Avenue), Ciputra World 1, Jakarta Selatan. Uniqlo Indonesia dikelola oleh PT Fast Retailing
+      Indonesia yang didirikan pada tanggal 16 Oktober 2012 dan saat ini berkantor pusat di gedung South Quarter Tower
+      C, Cilandak, Jakarta Selatan. Di Bandung, Uniqlo pertama kali dibuka pada tanggal 19 Mei 2017 di 23 Paskal
+      Shopping Center. Sedangkan di Surabaya, Uniqlo pertama kali dibuka pada tanggal 1 September 2017 di Tunjungan
+      Plaza, disusul kemudian pada tanggal 15 September 2017 di Pakuwon Mall. Di Medan, Uniqlo pertama kali dibuka pada
+      tanggal 16 Maret 2018 di Sun Plaza sekaligus merupakan toko Uniqlo pertama di pulau Sumatera dan luar pulau Jawa.
+      Toko Uniqlo terbesar di Indonesia dibuka pada tanggal 9 April 2021 di Pondok Indah Mall 3, Jakarta Barat. Uniqlo
+      Indonesia membuka toko pertama di pinggir jalan (di luar mal atau pusat perbelanjaan), tepatnya di Heritage
+      Lifestyle Hub, Jalan L. L. R.E. Martadinata No. 65, Citarum, Kota Bandung.[6] Uniqlo membuka toko kedua di pinggir
+      jalan sekaligus toko pertama di kawasan perumahan, di One District at Puri, Metland Cyber Puri, Kota Tangerang,
+      pada tanggal 26 Mei 2023, tepat 10 tahun (1 dekade) Uniqlo Indonesia. Toko Uniqlo ketiga dan keempat di pinggir
+      jalan dibuka di Hive Kota Harapan Indah, Kota Bekasi, dan di Unimas District, Waru, Kabupaten Sidoarjo, pada
+      tanggal 26 April 2024. Toko Uniqlo kelima di pinggir jalan dibuka di Grand Kota Bintang, Kota Bekasi, pada tanggal
+      21 Maret 2025. Saat ini, Uniqlo memiliki 78 toko yang sudah dibuka di 27 kota di Indonesia (per 16 Juni 2025).</p>
+  </section>
+
+  <section id="kontak" class="section">
+    <h2>Hubungi Kami</h2>
+    <form id="form-kontak">
+      <input type="text" id="nama" placeholder="Nama" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="pesan" placeholder="Pesan" required></textarea>
+      <button type="submit">Kirim</button>
+      <div id="form-error" style="color:red; margin-top:10px;"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UNIQLO Indonesia. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
